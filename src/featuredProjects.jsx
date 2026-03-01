@@ -15,16 +15,9 @@ const FeaturedProjects = () => {
       liveLink: "https://hamarahub-mohithmalla.netlify.app",
       gitLink: "https://github.com/MohithMalla/HamaraHub",
     },
+    
     {
       id: "2",
-      name: "Live Auction Store",
-      profileImg: "/liveauction.png",
-      rating: "TypeScript, React, WebSockets (Real-time Bidding)",
-      liveLink: "https://gametoauction.com/", // Private repo/Internal demo
-      gitLink: "https://github.com/MohithMalla/Live-Auction-Store",
-    },
-    {
-      id: "3",
       name: "EcoTrack Frontend",
       profileImg: "/ecotrack.png",
       rating: "React Native,Node js, Web Sockets",
@@ -32,20 +25,28 @@ const FeaturedProjects = () => {
       gitLink: "https://github.com/MohithMalla/Ecotrack_frontend",
     },
     {
-      id: "4",
-      name: "InvestoX",
-      profileImg: "/investox.png",
-      rating: "JavaScript,React,RestFul API's (Financial Portfolio Analysis)",
-      liveLink: "https://investox-mallamohith.netlify.app/",
-      gitLink: "https://github.com/MohithMalla/investoX",
+      id: "3",
+      name: "Live Auction Store",
+      profileImg: "/liveauction.png",
+      rating: "TypeScript, React, WebSockets (Real-time Bidding)",
+      liveLink: "https://gametoauction.com/", // Private repo/Internal demo
+      gitLink: "https://github.com/MohithMalla/Live-Auction-Store",
     },
     {
-      id: "5",
+      id: "4",
       name: "Flair AI",
       profileImg: "/flairai.png",
       rating: "JavaScript, React, AI Integration",
       liveLink: " https://flairai.netlify.app/",
       gitLink: "https://github.com/MohithMalla/FlairAI",
+    },
+    {
+      id: "5",
+      name: "InvestoX",
+      profileImg: "/investox.png",
+      rating: "JavaScript,React,RestFul API's (Financial Portfolio Analysis)",
+      liveLink: "https://investox-mallamohith.netlify.app/",
+      gitLink: "https://github.com/MohithMalla/investoX",
     },
     {
       id: "6",
@@ -55,14 +56,7 @@ const FeaturedProjects = () => {
       liveLink: "https://spiffy-arithmetic-842e36.netlify.app",
       gitLink: "https://github.com/MohithMalla/Chatter_Desk",
     },
-    {
-      id: "7",
-      name: "Battlefy",
-      profileImg: "/battlefy.png",
-      rating: "JavaScript, React, AI Integration",
-      liveLink: " https://battlefy.netlify.app/",
-      gitLink: "https://github.com/MohithMalla/Battlefy",
-    },
+    
   ]);
 
   return (
