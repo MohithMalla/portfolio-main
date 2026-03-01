@@ -9,11 +9,11 @@ const FeaturedProjects = () => {
   const [data] = useState([
    {
       id: "1",
-      name: "HamaraHub",
-      profileImg: "/hamarahub.png", // Ensure you add this image to your public folder
-      rating: "React, Node.js , AWS (Community Deployment Platform)",
-      liveLink: "https://hamarahub-mohithmalla.netlify.app",
-      gitLink: "https://github.com/MohithMalla/HamaraHub",
+      name: "Live Auction Store",
+      profileImg: "/liveauction.png",
+      rating: "TypeScript, React, WebSockets (Real-time Bidding)",
+      liveLink: "https://gametoauction.com/", // Private repo/Internal demo
+      gitLink: "https://github.com/MohithMalla/Live-Auction-Store",
     },
     
     {
@@ -24,13 +24,14 @@ const FeaturedProjects = () => {
       liveLink: "#",
       gitLink: "https://github.com/MohithMalla/Ecotrack_frontend",
     },
+    
     {
       id: "3",
-      name: "Live Auction Store",
-      profileImg: "/liveauction.png",
-      rating: "TypeScript, React, WebSockets (Real-time Bidding)",
-      liveLink: "https://gametoauction.com/", // Private repo/Internal demo
-      gitLink: "https://github.com/MohithMalla/Live-Auction-Store",
+      name: "HamaraHub",
+      profileImg: "/hamarahub.png", // Ensure you add this image to your public folder
+      rating: "React, Node.js , AWS (Community Deployment Platform)",
+      liveLink: "https://hamarahub-mohithmalla.netlify.app",
+      gitLink: "https://github.com/MohithMalla/HamaraHub",
     },
     {
       id: "4",
