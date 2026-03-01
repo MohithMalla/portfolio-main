@@ -1,0 +1,165 @@
+#intro {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top right, #1a331a 0%, #262626 40%);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.introhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.introcontent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 2;
+}
+
+.introtext {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.iam {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5rem;
+  color: #ccc;
+}
+
+.introname {
+  color: #06ff06;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4rem;
+  text-shadow: 0 0 10px rgba(6, 255, 6, 0.4);
+}
+
+.role {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #e0e0e0;
+  height: 3rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.info {
+  margin-top: 1rem;
+  color: #dcd1d1;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 600px;
+  border-left: 3px solid #06ff06;
+  padding-left: 1rem;
+}
+
+/* --- FIXED SOCIAL ICONS --- */
+.socialmedia {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.smimg {
+  height: 2.8rem;
+  width: 2.8rem;
+  object-fit: contain;
+  /* This filter turns black icons green WITHOUT moving them */
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.sm:hover .smimg {
+  /* Turns white on hover */
+  filter: brightness(0) invert(1);
+  transform: translateY(-5px);
+}
+
+.aboutme {
+  margin-top: 3rem;
+  background: #06ff06;
+  color: #000;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(6, 255, 6, 0.4);
+}
+
+.profile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-glow {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(6, 255, 6, 0.3) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulseGlow 4s infinite alternate;
+}
+
+.profileimg {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  z-index: 2;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5)); 
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.2); opacity: 0.8; }
+}
+
+@media (max-width: 900px) {
+  .introhead {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .introcontent {
+    align-items: center;
+    text-align: center;
+  }
+  .info {
+    border-left: none;
+    padding-left: 0;
+  }
+  .profileimg {
+    width: 280px;
+    height: 280px;
+  }
+  .profile-glow {
+    width: 250px;
+    height: 250px;
+  }
+  .introname {
+    font-size: 3rem;
+  }
+  .role {
+    font-size: 1.5rem;
+  }
+}

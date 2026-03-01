@@ -1,0 +1,67 @@
+.contme {
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all child elements */
+}
+
+.protitles {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.cont {
+    font-size: 1rem;
+    padding: 1rem;
+    background: #222222;
+    color: #ffffff;
+    width: 100%; /* Spans container width */
+    max-width: 25rem; /* Keeps it from getting too wide on desktop */
+    letter-spacing: 2.5px;
+    margin: 0.5rem 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+
+.socimed {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.smimg {
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Tablet and Desktop Adjustments */
+@media (max-width: 900px) {
+    .protitles {
+        font-size: 2.2rem;
+    }
+    
+    .cont {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+    }
+    
+    .socimed {
+        gap: 1.5rem;
+    }
+}

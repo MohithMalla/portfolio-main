@@ -1,0 +1,98 @@
+.foot {
+  background-color: var(--bg-card); /* Matches the cards */
+  padding: 3rem 1rem 2rem 1rem; /* Padding top/sides/bottom */
+  border-top: 1px solid #333;
+  margin-top: auto; /* Pushes footer to bottom */
+}
+
+.foot-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Navigation Links */
+.footnavbar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footnavbar a {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footnavbar a:hover {
+  color: var(--primary-green);
+  transform: translateY(-3px);
+}
+
+/* Social Media Icons */
+.socmedia {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reusing global smimg styles, but ensuring they fit here */
+.socmedia .smimg {
+  width: 2rem;
+  height: 2rem;
+  /* Filter logic is handled in index.css/intro.css, 
+     but adding transition here ensures smoothness */
+  transition: transform 0.3s ease;
+}
+
+.socmedia .smimg:hover {
+  transform: scale(1.2);
+}
+
+/* Copyright Text */
+.copyright {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  width: 100%;
+}
+
+.copyrights {
+  color: #888;
+  font-size: 0.9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.mohithmalla {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.mohithmalla:hover {
+  color: white;
+  text-shadow: 0 0 10px var(--primary-green);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .footnavbar {
+    gap: 1.5rem;
+    flex-direction: column; /* Stack links vertically on phone */
+    align-items: center;
+  }
+  
+  .foot {
+    padding-bottom: 6rem; /* Extra space at bottom so Chatbot doesn't cover text */
+  }
+}
